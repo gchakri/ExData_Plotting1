@@ -14,15 +14,16 @@ with(projectData, {
 	plot(timestamp, Global_active_power, pch="", main="", ylab="Global Active Power (kilowatt)", xlab = "")
 	lines(timestamp, Global_active_power)
 
+	plot(timestamp, Voltage, pch="", main="", ylab="Voltage", xlab = "datetime")
+	lines(timestamp, Voltage)
+
 	plot(timestamp, Sub_metering_1, pch="", main="", ylab="Energy Sub Metering", xlab = "")
 	lines(timestamp, Sub_metering_1)
 	lines(timestamp, Sub_metering_2, col="red")
 	lines(timestamp, Sub_metering_3, col="blue")
 
-	plot(timestamp, Voltage, pch="", main="", ylab="Voltage", xlab = "datetime")
-	lines(timestamp, Voltage)
-
 	plot(timestamp, Global_reactive_power, pch="", main="", ylab="Global_reactive_power", xlab = "datetime")
 	lines(timestamp, Global_reactive_power)
 })
 dev.off()
+
